@@ -1,16 +1,19 @@
+import { SearchServiceService } from './search-component/search-service.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { SearchComponentComponent } from './search-component/search-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchComponentComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [SearchServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
